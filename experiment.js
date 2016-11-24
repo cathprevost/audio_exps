@@ -3,7 +3,7 @@
 function runExperiment(){
 	
 	serverPsych.request(function (settings){
-		var stimuliList = [['sound/sound.mp3','h'],['sound/hammer.mp3', 'g']]
+		var stimuliList = [['/media/audioCat/sound.mp3','h'],['/media/audioCat/hammer.mp3', 'g']]
 	    
 		settings.timeline.forEach(function(block, idx, timeline){
 			if(block.type == "audio-categorization"){
