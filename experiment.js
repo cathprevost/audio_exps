@@ -12,6 +12,13 @@ function runExperiment(){
 		        {stimulus: stimuliList[1][0], key_answer: stimuliList[1][1]}
 		        ];    
 			}
+			if(block.type == "similarity"){
+				
+				block.timeline = [
+				    {stimuli: [stimuliList[0][0], stimuliList[1][0]]}
+				];
+			
+			}
 			
 		});
 				
